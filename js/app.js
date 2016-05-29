@@ -42,7 +42,7 @@
       dataType: 'jsonp',
       success: function(json) {
         $('#current_temp').html(Math.round(json.currently.temperature) + '&#176;C');
-        $('#current_temp').attr("data-icon", icons[json.currently.icon]);
+        $('#current_icon span').attr("data-icon", icons[json.currently.icon]);
         $('#current_summary').html(json.currently.summary);
       },
       error: function(e) {
