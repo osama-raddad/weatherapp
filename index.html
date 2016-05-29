@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Weather App</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body>
+
+
+    <div data-role="page">
+
+      <div data-role="panel" id="left-panel">
+        <ul data-role="listview">
+          <li data-icon="delete">
+            <a href="#" data-rel="close">Close</a>
+            <!-- <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-rel="close">Delete</a> -->
+          </li>
+          <li data-role="list-divider">Select a city</li>
+          <li><a href="#" class="city" data-rel="close">Current Location</a></li>
+          <li><a href="#" class="city" data-rel="close">Frankfurt</a></li>
+          <li><a href="#" class="city" data-rel="close">Berlin</a></li>
+          <li><a href="#" class="city" data-rel="close">London</a></li>
+          <li><a href="#" class="city" data-rel="close">New York</a></li>
+          <li><a href="#" class="city" data-rel="close">Los Angeles</a></li>
+          <li><a href="#" class="city" data-rel="close">Tokyo</a></li>
+        </ul>
+      </div><!-- /panel -->
+
+      <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Weather App</h1>
+<!--         <a href="#left-panel" class="ui-shadow-icon" data-role="button" data-icon="bars" data-iconshadow="true" data-iconpos="notext">Menu</a>
+ -->        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+
+      </div>
+      <div role="main" class="ui-content">
+        <h1 id="current_temp" class="icon" data-icon="B">25&#176;C</h1>
+        <p id="current_summary">Clear</p>
+        <p id="location">Frankfurt</p>
+      </div>
+      <div data-role="footer" data-position="fixed"><h4>&copy; 2016 Digital Creative</h4></div>
+    </div>
+    
+  </body>
+</html>
